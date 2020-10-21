@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ded"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+  <EditText
+      android:id="@+id/username"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:ems="10"
+      android:hint="Name"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <CheckBox
+      android:id="@+id/male"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked"
+      android:text="Male"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintHorizontal_bias="0.436"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/dd" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="205dp" />
+
+  <CheckBox
+      android:id="@+id/female"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked"
+      android:text="Female"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toBottomOf="@+id/dd" />
+
+  <EditText
+      android:id="@+id/height"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:ems="10"
+      android:hint="Height"
+      android:inputType="phone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/male" />
+
+  <EditText
+      android:id="@+id/weight"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:ems="10"
+      android:hint="Weight"
+      android:inputType="phone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/height" />
+
+  <CheckBox
+      android:id="@+id/asia"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked2"
+      android:text="Asia"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintHorizontal_bias="0.64"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:textSize="25sp"
+      android:text=" Please select your continent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+  <CheckBox
+      android:id="@+id/australia"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked2"
+      android:text=" Australia"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <CheckBox
+      android:id="@+id/afrika"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked2"
+      android:text="Afrika"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/asia" />
+
+  <CheckBox
+      android:id="@+id/europe"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked2"
+      android:text="Europe"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toBottomOf="@+id/australia" />
+
+  <CheckBox
+      android:id="@+id/north_america"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked2"
+      android:text=" North America"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/afrika" />
+
+  <CheckBox
+      android:id="@+id/sourth_america"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:onClick="onCheckboxClicked2"
+      android:text="Sourth America"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toBottomOf="@+id/europe" />
+
+  <Button
+      android:id="@+id/go"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="#D8E6DB77"
+      android:text="go"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/north_america" />
+
+  <Button
+      android:id="@+id/clear"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="#D9E6DBFF"
+      android:backgroundTint="#D9E6DB77"
+      android:text="clear"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toBottomOf="@+id/sourth_america" />
+
+  <EditText
+      android:id="@+id/yy"
+      android:layout_width="100dp"
+      android:layout_height="43dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:ems="10"
+      android:hint="yyyy"
+      android:inputType="phone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/username" />
+
+  <EditText
+      android:id="@+id/mm"
+      android:layout_width="100dp"
+      android:layout_height="43dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:ems="10"
+      android:hint="mm"
+      android:inputType="phone"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/username" />
+
+  <EditText
+      android:id="@+id/dd"
+      android:layout_width="100dp"
+      android:layout_height="43dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="#D9E6DB77"
+      android:ems="10"
+      android:hint="dd"
+      android:inputType="phone"
+      app:layout_constraintEnd_toStartOf="@+id/yy"
+      app:layout_constraintStart_toEndOf="@+id/mm"
+      app:layout_constraintTop_toBottomOf="@+id/username" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
