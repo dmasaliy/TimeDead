@@ -1,4 +1,4 @@
-package com.example.timedead;
+package com.time.timedead;
 
 import android.content.Context;
 

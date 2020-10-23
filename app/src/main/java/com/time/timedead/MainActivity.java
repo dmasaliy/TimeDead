@@ -1,22 +1,14 @@
-package com.example.timedead;
+package com.time.timedead;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import java.time.Year;
-import java.util.Calendar;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     int allSum;
@@ -141,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         allSum = (sum1 + sum2 + sum3) + sum2 + (sum2 * 2);
+
         Dead.Dead(allSum);
     }
 

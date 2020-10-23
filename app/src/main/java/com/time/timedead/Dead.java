@@ -1,4 +1,4 @@
-package com.example.timedead;
+package com.time.timedead;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +14,6 @@ public class Dead extends AppCompatActivity {
     TextView user;
     TextView date;
     String student;
-    String dateDead;
 
     static private String lastDate;
 
